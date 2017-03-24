@@ -3,7 +3,8 @@ Mountain Duck Bookmarks
 
 This is an [Alfred workflow](http://alfredapp.com) which allows you to connect or open ssh session to your Mountain Duck bookmarks from alfred.
 
-This workflow is based on [alfred.py](https://github.com/Kasoki/alfred.py) , [cliclick](https://www.bluem.net/en/mac/cliclick/) for menu bar integration and [Cyberduck Favourites](https://github.com/Kasoki/Cyberduck-Favorites)
+This workflow is based on [alfred.py](https://github.com/Kasoki/alfred.py) and [Cyberduck Favourites](https://github.com/Kasoki/Cyberduck-Favorites).
+[Cliclick](https://www.bluem.net/en/mac/cliclick/) binary is used for menu bar integration.
 
 ![md](md.png)
 ![mt](mt.png)
@@ -13,7 +14,8 @@ Licence
 
 This workflow is licenced under the terms of the [MIT Licence](http://opensource.org/licenses/MIT)
 
-cliclick
+Cliclick license
+----------------
 
 Copyright (c) 2007-2015, Carsten Blüm <carsten@bluem.net>
 All rights reserved.
