@@ -53,7 +53,7 @@
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>script</key>
-				<string>osascript connect.scpt "{query}"</string>
+				<string>osascript connect.applescript "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -166,7 +166,7 @@ echo $VAR</string>
 				<key>escaping</key>
 				<integer>4</integer>
 				<key>script</key>
-				<string>osascript ssh.scpt "{query}"</string>
+				<string>osascript ssh.applescript "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
