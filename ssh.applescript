@@ -1,6 +1,17 @@
 property clickCommandPath : ""
 property clickCommandPosix : ""
 on run argv
+	tell application "System Events" to tell (first process whose frontmost is true)
+		delay 0.05
+		if front window exists then
+			tell front window
+				if value of attribute "AXFullScreen" then
+					set value of attribute "AXFullScreen" to false
+					delay 1
+				end if
+			end tell
+		end if
+	end tell
 	tell application "Mountain Duck"
 		activate
 		set clickCommandPath to ((path to me as text) & "::")
