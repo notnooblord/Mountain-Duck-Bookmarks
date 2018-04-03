@@ -34,7 +34,7 @@ on clickObjectByCoords(someObject, xText)
 	using terms from application "System Events"
 		set {xCoord, yCoord} to position of someObject
 		if (xCoord < 0) then
-			set xCoord to (xMenuSize + xCoord)
+			--set xCoord to (xMenuSize + xCoord)
 		end if
 		set {xSize, ySize} to size of someObject
 	end using terms from
@@ -49,6 +49,6 @@ end clickObjectByCoords
 on clickAtCoords(xClick, yClick, xText)
 	set xClick to round xClick rounding down
 	set yClick to round yClick rounding down
-	set reply to do shell script quoted form of clickCommandPosix & " -r c:" & xClick & "," & yClick
+	set reply to do shell script quoted form of clickCommandPosix & " -r c:=" & xClick & ",=" & yClick
 	return ((xClick as string) & "," & yClick)
 end clickAtCoords
